@@ -11,7 +11,7 @@ st.set_page_config(page_title="Parkinson's Predictor", layout="centered")
 
 # Load dataset and trained model
 data = pd.read_csv('parkinson data.csv')
-model = joblib.load('parkinson_detector.pkl')
+model = joblib.load('Parkinson_detector.pkl')
 
 # Define all features used during training
 full_feature_list = data.drop(columns=['status', 'name']).columns.tolist()
